@@ -31,3 +31,5 @@ Extract the zip files before running the experiments:
 ```bash
 unzip chr1_Contiguous1KSNP.zip
 unzip chr1_Random1KSNP.zip
+unzip chr1_Contiguous1KSNP_LDpruned_08.zip
+unzip chr1_Contiguous1KSNP_LDpruned_09.zip
