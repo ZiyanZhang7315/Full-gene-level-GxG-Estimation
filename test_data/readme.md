@@ -1,13 +1,13 @@
 # Test Data
 
-This directory contains test datasets for the gene-level GxG (gene-gene interaction) estimation pipeline.
+This directory contains test datasets for the gene-level GxG estimation experiments and the code for how it generated.
 
 ## Files
 
 ### SNP Datasets
 
 | File | Description |
-|------|-------------|
+|------|-------------| 
 | `chr1_Contiguous1KSNP.zip` | 1,000 contiguous SNPs from chromosome 1 |
 | `chr1_Random1KSNP.zip` | 1,000 randomly selected SNPs from chromosome 1 |
 
@@ -26,7 +26,7 @@ This directory contains test datasets for the gene-level GxG (gene-gene interact
 
 ## Usage
 
-Extract the zip files before running the analysis pipeline:
+Extract the zip files before running the experiment:
 
 ```bash
 unzip chr1_Contiguous1KSNP.zip
