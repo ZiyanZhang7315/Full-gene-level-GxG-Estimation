@@ -1,8 +1,6 @@
 # Scripts
 
-This directory contains the core Python modules for gene-level GxG (gene-gene interaction) estimation.
-
-## Modules
+This file contains the core Python modules for gene-level GxG (gene-gene interaction) estimation.
 
 ### gene_level_MoM.py
 
