@@ -170,7 +170,7 @@ def plot_distribution_varzizj(varZiZj_array, start, end, num_bin):
   
     plt.title(fr'Distribution of $Var(Z_i Z_j)$ in range [{start}, {end}]', fontsize=15)
     plt.xlabel(r'Variance of ($Var(Z_i Z_j)$)', fontsize=12)
-    plt.ylabel('Percentage (%)', fontsize=12) 
+    plt.ylabel('Count', fontsize=12) 
   
     plt.grid(axis='y', alpha=0.3)
     plt.tight_layout()
