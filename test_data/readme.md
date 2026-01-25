@@ -4,7 +4,7 @@ This directory contains test datasets for the gene-level GxG estimation experime
 
 ## Files
 
-### SNP Datasets
+### Datasets
 
 | File | Description |
 |------|-------------| 
@@ -13,6 +13,11 @@ This directory contains test datasets for the gene-level GxG estimation experime
 | `chr1_Contiguous1KSNP_LDpruned_08.zip` | Contiguous SNPs after LD pruning (r² threshold = 0.8) |
 | `chr1_Contiguous1KSNP_LDpruned_09.zip` | Contiguous SNPs after LD pruning (r² threshold = 0.9) |
 
+### Simulation results from cluster
+
+| Folder | Description |
+|--------|-------------|
+| `MoM_result_ContiguousSNP_after_pruning_09/` | MoM estimation results using LD-pruned contiguous SNPs (r² = 0.9) |
 
 ### SH Scripts
 

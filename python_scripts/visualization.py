@@ -175,3 +175,30 @@ def plot_distribution_varzizj(varZiZj_array, start, end, num_bin):
     plt.grid(axis='y', alpha=0.3)
     plt.tight_layout()
     plt.show()
+
+
+def read_MoM_results(individual_sizes, path, num_snp):
+    """
+    read_MoM_results from cluster output files.
+
+    parameters:
+    individual_sizes: list of individual sizes (e.g., [1000, 2000, 4000])
+    path: directory path where the result files are stored
+    num_snp: number of SNPs used in the analysis
+
+    returns:
+    A dictionary with individual sizes as keys and corresponding DataFrames as values.
+    """ 
+
+    data_dict = {}
+    for n in individual_sizes:
+        file_name = f"{n}m{num_snp}.txt"
+        file_path = os.path.join(path, file_name)
+        
+        df = pd.read_csv(file_path, header=None)
+        df[0] = df[0].astype(str).str.replace('(', '', regex=False).astype(float)
+        df[1] = df[1].astype(str).str.replace(')', '', regex=False).astype(float)
+        
+        data_dict[n] = df
+        
+    return data_dict

@@ -10,6 +10,8 @@ Core estimation module implementing the MoM.
 |----------|-------------|
 | `simulate_from_raw_only_W` | Simulate phenotypes from raw genotype data with specified GxG and e variance components |
 | `MoM_only_M` | Method of Moments estimator for variance components |
+| `run_experiment_MC` | Run Monte Carlo experiments for variance component estimation |
+
 
 ### weight_function.py
 
@@ -37,6 +39,9 @@ visualization part.
 |----------|-------------|
 | `plot_relative_error_accross_sample_size` | Plot relative estimation error across different sample sizes |
 | `plot_var_pairwise_products_against_ld` | Scatter plot of pairwise product variance against LD (r) values |
+| `plot_distribution_varzizj` | Plot distribution of Var(ZᵢZⱼ) values within a specified range |
+| `read_MoM_results` | Read MoM results from cluster output files into a dictionary of DataFrames |
+
 
 ## How to use
 
