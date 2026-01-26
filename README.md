@@ -13,18 +13,18 @@ This project implements statistical methods to estimate the contribution of epis
 Phenotypic variance is decomposed into: $Var(y) = \sigma^2_{g \times g} \times W + \sigma^2_e \times I$
 
 Where:
-- **σ²_gxg**: GxG epistatic variance component (target parameter)
-- **σ²_e**: Residual/environmental variance
-- **W**: GxG interaction kernel matrix
-- **I**: Identity matrix
+- **$\sigma^2_{g \times g}$**: GxG epistatic variance component (target parameter)
+- **$\sigma^2_e$**: Residual/environmental variance
+- **$W$**: GxG interaction kernel matrix
+- **$I$**: Identity matrix
 
 ### GxG Interaction Kernel
 
 The interaction kernel W captures pairwise epistatic effects:
-W = 0.5 × (K⊙K - D@Dᵀ) / p
+$W = 0.5 × (K \circ K - D \circ D^T) / p$
 
 
-Where K = ZZᵀ is the linear kernel, D = Z⊙Z (element-wise square), and p is the number of interaction pairs.
+Where $K = ZZ^T$ is the linear kernel, D = Z⊙Z (element-wise square), and p is the number of interaction pairs.
 
 ### Method of Moments Estimation
 
