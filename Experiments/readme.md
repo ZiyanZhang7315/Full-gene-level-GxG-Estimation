@@ -22,7 +22,8 @@ Investigates the challenges of GxG estimation when using contiguous (neighboring
 - **Experiment 2**: Distribution analysis of Var(ZiZj) for standardized genotypes
 - **Experiment 3**: Correlation between variance and LD strength
 - **Experiment 4**: Evaluation of LD-pruning strategies
-- **Experiment 5**: Impact of removing highly correlated SNP pairs
+- **Experiment 5**: Impact of removing highly correlated SNP pairs(around 300, original 1k)
+- **Experiment 6**: same setting with Experiment 5 but with increased SNP size to around 1k
 
 ---
 
