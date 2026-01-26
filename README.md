@@ -24,24 +24,28 @@ The interaction kernel W captures pairwise epistatic effects:
 $W = 0.5 × (K \circ K - D \circ D^T) / p$
 
 
-Where $K = ZZ^T$ is the linear kernel, D = Z⊙Z (element-wise square), and p is the number of interaction pairs.
+Where $K = ZZ^T$ is the linear kernel, $D = Z \circ Z $(element-wise square), and p is the number of interaction pairs. $\circ$ is the haardmard product.
 
-### Method of Moments Estimation
-
-The estimator solves moment equations using quadratic forms with stochastic trace estimation for computational efficiency.
 
 ## Project Structure
-This project has three part....
+
+This project has three parts:
+
+### python_scripts/
+Core Python modules implementing the MoM estimator and supporting utilities.
+
+### test_data/
+Genomic datasets used for validation experiments.
+
+### Experiments/
+Jupyter notebooks for validating the MoM estimator and perform other analysis.
 
 See the `readme.md` in each subdirectory for detailed documentation.
-
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/Full-gene-level-GxG-Estimation.git
-cd Full-gene-level-GxG-Estimation
+git clone https://github.com/ZiyanZhang7315/Full-gene-level-GxG-Estimation.git
 
-# Install dependencies
-pip install numpy pandas matplotlib jupyter
+cd Full-gene-level-GxG-Estimation
